@@ -5,12 +5,13 @@ public class ingredienceBehavior : MonoBehaviour
 {
     [SerializeField] private float speed;
     bool fly = true;
-    public listOfIngredience playerListOfIngredience;
+    public InList ingredienceList;
 
     bool collisionBool = false;
     bool touchedTerminator = false;
     bool touchedIngredient = false;
     bool touchedStacker = false;
+    bool addedIngredient = false;
    
     void Start()
     {
@@ -35,10 +36,17 @@ public class ingredienceBehavior : MonoBehaviour
             transform.position += Vector3.down * speed;
         }
 
-        if (touchedIngredient && touchedStacker == true)
+        if ((touchedIngredient && touchedStacker) == true && addedIngredient == false)
         {
             collisionBool = true;
-            playerListOfIngredience.theIngredienceList.Add(gameObject);
+            ingredienceList.gameObjects.Add(gameObject);
+            addedIngredient = true;
+        }
+
+        if (touchedTerminator == true && (touchedIngredient || touchedStacker) == false)
+        {
+            Object.Destroy(gameObject);
+            Debug.Log("diller");
         }
     }
   
@@ -50,11 +58,10 @@ public class ingredienceBehavior : MonoBehaviour
             touchedIngredient = true;
         }
        
-        else if (collision.gameObject.layer == 7 && (touchedStacker && touchedIngredient) == true)
+        else if (collision.gameObject.layer == 7 )
         {
-            Object.Destroy(gameObject);
-            Debug.Log("diller");
 
+            touchedTerminator = true;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
