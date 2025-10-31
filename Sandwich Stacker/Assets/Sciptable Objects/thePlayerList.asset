@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da069863c465e944293389ad707818c1, type: 3}
   m_Name: thePlayerList
   m_EditorClassIdentifier: Assembly-CSharp::listOfIngredience
-  theIngredienceList: []
+  theIngredienceList:
+  - {fileID: 0}
