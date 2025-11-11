@@ -4,6 +4,7 @@ using UnityEngine;
 public class ingredienceBehavior : MonoBehaviour
 {
     [SerializeField] private float speed = 0.07f;
+    public GameObject spawner;
     bool fly = true;
     public InList ingredienceList;
 
@@ -40,13 +41,15 @@ public class ingredienceBehavior : MonoBehaviour
         {
             collisionBool = true;
             ingredienceList.gameObjects.Add(gameObject);
+            spawner.GetComponent<Spawner>().SpawnIngredient();
             addedIngredient = true;
         }
 
-        if (touchedTerminator == true && (touchedIngredient || touchedStacker) == false)
+        if (touchedTerminator == true && (touchedIngredient && touchedStacker) == false)
         {
+            spawner.GetComponent<Spawner>().SpawnIngredient();
             Object.Destroy(gameObject);
-            Debug.Log("diller");
+            
         }
     }
   
