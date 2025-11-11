@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ingredienceBehavior : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    [SerializeField] private float speed = 0.07f;
     bool fly = true;
     public InList ingredienceList;
 
