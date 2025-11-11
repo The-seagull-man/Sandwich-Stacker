@@ -903,6 +903,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Randomsandwitchscript
   RandomListOfIngredients: {fileID: 11400000, guid: 37a98d88e31be89438c9ef28074a145b, type: 2}
+  bread: {fileID: 3021913793777979956, guid: d696b076d7d9f6c42839ac39107e3933, type: 3}
+  beef: {fileID: 3021913793777979956, guid: 317bc9455c648d042809377f0c7337ab, type: 3}
+  tomato: {fileID: 3021913793777979956, guid: 58cced83da59c364ea1b15d9e1ebe61f, type: 3}
+  cucumber: {fileID: 3021913793777979956, guid: 512357b31e5e5834da0384793640512e, type: 3}
+  onion: {fileID: 3021913793777979956, guid: 3fe9981d9a616db40a98d35517ab7345, type: 3}
+  cheese: {fileID: 3021913793777979956, guid: 429ac80548cde4945924f5c75d3410aa, type: 3}
+  salad: {fileID: 3021913793777979956, guid: d2ef1e894ecf6464ea9e1af54c0fd658, type: 3}
 --- !u!4 &1249004639
 Transform:
   m_ObjectHideFlags: 0
