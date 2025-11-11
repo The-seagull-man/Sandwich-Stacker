@@ -6,7 +6,7 @@ public class ingredienceBehavior : MonoBehaviour
     [SerializeField] private float speed = 0.07f;
     bool fly = true;
     public InList ingredienceList;
-
+    private Rigidbody2D rb;
     bool collisionBool = false;
     bool touchedTerminator = false;
     bool touchedIngredient = false;
@@ -15,13 +15,13 @@ public class ingredienceBehavior : MonoBehaviour
    
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && transform.position.x >= -9 && transform.position.x <= 9)
+        if (Input.GetKey(KeyCode.Space) && transform.position.x >= -9 && transform.position.x <= 9)
         {
             fly = false;
             
@@ -41,12 +41,14 @@ public class ingredienceBehavior : MonoBehaviour
             collisionBool = true;
             ingredienceList.gameObjects.Add(gameObject);
             addedIngredient = true;
+            
+            rb.constraints = RigidbodyConstraints2D.FreezePosition | RigidbodyConstraints2D.FreezeRotation;
+
         }
 
-        if (touchedTerminator == true && (touchedIngredient || touchedStacker) == false)
+        if (touchedTerminator == true && (touchedIngredient && touchedStacker) == false)
         {
             Object.Destroy(gameObject);
-            Debug.Log("diller");
         }
     }
   

@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bcdeb7543dd45040bba8b94c4ce6122, type: 3}
   m_Name: PlayerList
   m_EditorClassIdentifier: Assembly-CSharp::InList
-  gameObjects:
-  - {fileID: 0}
+  gameObjects: []
