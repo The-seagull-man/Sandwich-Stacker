@@ -21,7 +21,7 @@ public class ingredienceBehavior : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && transform.position.x >= -9 && transform.position.x <= 9)
+        if (Input.GetKey(KeyCode.Space) && transform.position.x >= -9 && transform.position.x <= 9)
         {
             fly = false;
             
@@ -41,8 +41,8 @@ public class ingredienceBehavior : MonoBehaviour
             collisionBool = true;
             ingredienceList.gameObjects.Add(gameObject);
             addedIngredient = true;
-            rb.freezeRotation = false;
-            rb.constraints = RigidbodyConstraints2D.FreezePosition;
+            
+            rb.constraints = RigidbodyConstraints2D.FreezePosition | RigidbodyConstraints2D.FreezeRotation;
 
         }
 
