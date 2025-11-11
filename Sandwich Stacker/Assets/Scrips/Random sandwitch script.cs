@@ -4,13 +4,13 @@ using UnityEngine;
 public class Randomsandwitchscript : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    //public listOfIngredience RandomListOfIngredients;
+    public InList RandomListOfIngredients;
     
 
     void Start()
     {
-      //  RandomListOfIngredients.theIngredienceList.Add(gameObject/*bread*/);
-       // RandomListOfIngredients.theIngredienceList.Add(gameObject/*bread*/);
+      RandomListOfIngredients.gameObjects.Add(gameObject/*(bread)*/);
+      RandomListOfIngredients.gameObjects.Add(gameObject/*bread*/);
     }
 
     // Update is called once per frame
