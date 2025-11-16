@@ -7,15 +7,18 @@ public class ingredienceBehavior : MonoBehaviour
     bool fly = true;
     public InList ingredienceList;
     private Rigidbody2D rb;
+    private SpriteRenderer spriteRender;
     bool collisionBool = false;
     bool touchedTerminator = false;
     bool touchedIngredient = false;
     bool touchedStacker = false;
     bool addedIngredient = false;
-   
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
     }
 
     // Update is called once per frame
@@ -24,7 +27,7 @@ public class ingredienceBehavior : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && transform.position.x >= -9 && transform.position.x <= 9)
         {
             fly = false;
-            
+
         }
         else if (fly == true)
         {
@@ -41,7 +44,6 @@ public class ingredienceBehavior : MonoBehaviour
             collisionBool = true;
             ingredienceList.gameObjects.Add(gameObject);
             addedIngredient = true;
-            
             rb.constraints = RigidbodyConstraints2D.FreezePosition | RigidbodyConstraints2D.FreezeRotation;
 
         }
@@ -51,7 +53,7 @@ public class ingredienceBehavior : MonoBehaviour
             Object.Destroy(gameObject);
         }
     }
-  
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
@@ -59,8 +61,8 @@ public class ingredienceBehavior : MonoBehaviour
         {
             touchedIngredient = true;
         }
-       
-        else if (collision.gameObject.layer == 7 )
+
+        else if (collision.gameObject.layer == 7)
         {
 
             touchedTerminator = true;
@@ -74,3 +76,4 @@ public class ingredienceBehavior : MonoBehaviour
         }
     }
 }
+
