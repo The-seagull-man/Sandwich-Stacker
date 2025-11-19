@@ -12,4 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bcdeb7543dd45040bba8b94c4ce6122, type: 3}
   m_Name: RandomList
   m_EditorClassIdentifier: Assembly-CSharp::InList
-  gameObjects: []
+  gameObjects:
+  - {fileID: 3021913793777979956, guid: d696b076d7d9f6c42839ac39107e3933, type: 3}
+  - {fileID: 3021913793777979956, guid: 317bc9455c648d042809377f0c7337ab, type: 3}
+  - {fileID: 3021913793777979956, guid: 429ac80548cde4945924f5c75d3410aa, type: 3}
+  - {fileID: 3021913793777979956, guid: d696b076d7d9f6c42839ac39107e3933, type: 3}
+  - {fileID: 3021913793777979956, guid: d696b076d7d9f6c42839ac39107e3933, type: 3}
+  - {fileID: 3021913793777979956, guid: 3fe9981d9a616db40a98d35517ab7345, type: 3}
+  - {fileID: 3021913793777979956, guid: 512357b31e5e5834da0384793640512e, type: 3}
+  - {fileID: 3021913793777979956, guid: d696b076d7d9f6c42839ac39107e3933, type: 3}
