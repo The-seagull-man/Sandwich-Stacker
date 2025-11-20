@@ -856,6 +856,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 973703169}
+  - component: {fileID: 973703170}
   m_Layer: 0
   m_Name: Sample Sandwich
   m_TagString: Untagged
@@ -883,6 +884,25 @@ Transform:
   - {fileID: 1197462542}
   m_Father: {fileID: 1864892847}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &973703170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973703168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1fbbf0ed1549bf4da0b9c46d5dbf839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Samplesandwitchscript
+  RandomListOfIngredients: {fileID: 11400000, guid: 37a98d88e31be89438c9ef28074a145b, type: 2}
+  comp:
+  - {fileID: 791578957}
+  - {fileID: 1274891140}
+  - {fileID: 1685523402}
+  - {fileID: 1920424993}
+  - {fileID: 1197462542}
 --- !u!1 &1051752637
 GameObject:
   m_ObjectHideFlags: 0
