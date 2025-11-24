@@ -15,16 +15,22 @@ public class Samplesandwitchscript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        for (int i = 0; i <= comp.Length; i++)
+        
+        for (int i = 0; i < comp.Length; i++)
         {
-            comp[i].GetComponent<SpriteRenderer>().sprite = RandomListOfIngredients.gameObjects[i].GetComponent<SpriteRenderer>().sprite;
-            
-            for(int b = i ; comp.Length > comp[i] && b >= i ; b++)
+
+            if (i < RandomListOfIngredients.gameObjects.Count)
             {
-                comp[b].GetComponent<SpriteRenderer>().sprite = null;
+
+                comp[i].GetComponent<SpriteRenderer>().sprite = RandomListOfIngredients.gameObjects[i].GetComponent<SpriteRenderer>().sprite;   
+                Debug.Log(i);
+
+            }
+            else
+            {
+                comp[i].GetComponent<SpriteRenderer>().sprite = null;
             }
         }
-        
        
     }
 }
