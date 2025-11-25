@@ -30,11 +30,9 @@ public class ImDoneSandwiching : MonoBehaviour
     private void OnMouseDown()
     {
         spawner.GetComponent<Spawner>().StopSpawning();
-        PresentSandwich();
         sandwichIsDone=true;
     }
 
-    void PresentSandwich()
-    {
-    }
+    
+
 }
