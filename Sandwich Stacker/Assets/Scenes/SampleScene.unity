@@ -225,6 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ImDoneSandwiching
   spawner: {fileID: 2052042942}
   sandwichParent: {fileID: 446944780}
+  olive: {fileID: 6804456936034454287, guid: 5766ccbf44d0e5b47b220fb085246606, type: 3}
   plate: {fileID: 1241590263}
   speed: 5
 --- !u!61 &260630685
@@ -572,7 +573,7 @@ Transform:
   m_GameObject: {fileID: 446944780}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: -0.96, z: 0}
+  m_LocalPosition: {x: 0.03, y: -1.44, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

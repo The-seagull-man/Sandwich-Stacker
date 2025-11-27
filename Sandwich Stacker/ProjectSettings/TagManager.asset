@@ -57,5 +57,8 @@ TagManager:
   - name: Front
     uniqueID: 1297716939
     locked: 0
+  - name: Olive
+    uniqueID: 2641952371
+    locked: 0
   m_RenderingLayers:
   - Default
