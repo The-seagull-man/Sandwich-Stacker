@@ -14,6 +14,7 @@ public class Randomsandwitchscript : MonoBehaviour
     public GameObject onion;
     public GameObject cheese;
     public GameObject salad;
+    public GameObject olive;
 
     List<GameObject> list = new List<GameObject>();
     
@@ -28,6 +29,8 @@ public class Randomsandwitchscript : MonoBehaviour
         list.Add(onion);
         list.Add(cheese);
         list.Add(salad);
+        list.Add (olive);
+        
         RandomListOfIngredients.gameObjects.Add(bread);
         for (int i = 0; i < Random.Range(1,4) ;i++ ) 
         {
@@ -36,7 +39,7 @@ public class Randomsandwitchscript : MonoBehaviour
 
         }
         RandomListOfIngredients.gameObjects.Add(bread);
-
+        RandomListOfIngredients.gameObjects.Add(olive);
 
 
     }
@@ -61,7 +64,7 @@ public class Randomsandwitchscript : MonoBehaviour
 
             }
             RandomListOfIngredients.gameObjects.Add(bread);
-
+            RandomListOfIngredients.gameObjects.Add(olive);
 
         }
     }
