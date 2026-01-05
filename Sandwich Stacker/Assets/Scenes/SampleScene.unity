@@ -953,7 +953,6 @@ GameObject:
   m_Component:
   - component: {fileID: 973703169}
   - component: {fileID: 973703170}
-  - component: {fileID: 973703171}
   m_Layer: 0
   m_Name: Sample Sandwich
   m_TagString: Untagged
@@ -1000,20 +999,6 @@ MonoBehaviour:
   - {fileID: 1685523402}
   - {fileID: 1920424993}
   - {fileID: 1197462542}
---- !u!114 &973703171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 973703168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e600b7ea89fe75045aa3647ec9aae3f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HoudiniScripini
-  GameObject: {fileID: 973703168}
-  targetTime: 5
 --- !u!1 &1051752637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1743,6 +1728,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1864892847}
   - component: {fileID: 1864892846}
+  - component: {fileID: 1864892848}
   m_Layer: 0
   m_Name: Plate
   m_TagString: Untagged
@@ -1824,6 +1810,22 @@ Transform:
   - {fileID: 973703169}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1864892848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864892845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e600b7ea89fe75045aa3647ec9aae3f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoudiniScripini
+  GameObject: {fileID: 0}
+  viewable: 1
+  speed: 3
+  targetTime: 5
 --- !u!1 &1920424992
 GameObject:
   m_ObjectHideFlags: 0
