@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using static UnityEditor.PlayerSettings;
 
@@ -12,12 +13,13 @@ public class ImDoneSandwiching : MonoBehaviour
     private float step;
     private GameObject spawnedOlive;
     bool sandwichIsDone = false;
-    private Component[] childrenTransforms;
+    private ingredienceBehavior[] childrenTransforms;
+    private GameObject topIngredient;
 
 
     void Start()
     {
-        
+        topIngredient = null;
     }
 
     // Update is called once per frame
@@ -37,9 +39,20 @@ public class ImDoneSandwiching : MonoBehaviour
         spawner.GetComponent<Spawner>().StopSpawning();
         sandwichIsDone=true;
         GetComponent<SpriteRenderer>().sprite = null;
-        childrenTransforms = sandwichParent.GetComponentsInChildren<Transform>();
-        spawnedOlive = Instantiate(olive, childrenTransforms[childrenTransforms.Length - 1].transform);
-        spawnedOlive.transform.position += new Vector3(0, 0.5f, 0);
+        childrenTransforms = sandwichParent.GetComponentsInChildren<ingredienceBehavior>();
+       
+            for (int i = 0; i < childrenTransforms.Length; i++)
+            {
+                if (childrenTransforms[i].collisionBool == true && topIngredient == null)
+                {
+                    topIngredient = childrenTransforms[i].gameObject;
+                    spawnedOlive = Instantiate(olive, topIngredient.transform);
+                    spawnedOlive.transform.position += new Vector3(0, 0.5f, 0);
+            }
+            }
+       
+        
+        
     }
 
     
