@@ -8,7 +8,7 @@ public class ingredienceBehavior : MonoBehaviour
     public InList ingredienceList;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRender;
-    bool collisionBool = false;
+    public bool collisionBool = false;
     bool touchedTerminator = false;
     bool touchedIngredient = false;
     bool touchedStacker = false;

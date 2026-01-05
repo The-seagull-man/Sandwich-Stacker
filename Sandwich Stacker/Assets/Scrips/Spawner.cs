@@ -39,6 +39,7 @@ public class Spawner : MonoBehaviour
     public void StopSpawning()
     {
         isStopped = true;
+        if (randomObject.GetComponent<ingredienceBehavior>().collisionBool == false) Destroy(randomObject);
     }
 
 }
