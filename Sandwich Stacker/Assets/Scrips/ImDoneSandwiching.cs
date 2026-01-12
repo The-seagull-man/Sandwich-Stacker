@@ -43,12 +43,12 @@ public class ImDoneSandwiching : MonoBehaviour
        
             for (int i = 0; i < childrenTransforms.Length; i++)
             {
-                if (childrenTransforms[i].collisionBool == true && topIngredient == null)
+                if (childrenTransforms[childrenTransforms.Length-(i+1)].collisionBool == true && topIngredient == null)
                 {
-                    topIngredient = childrenTransforms[i].gameObject;
+                    topIngredient = childrenTransforms[childrenTransforms.Length-(i+1)].gameObject;
                     spawnedOlive = Instantiate(olive, topIngredient.transform);
                     spawnedOlive.transform.position += new Vector3(0, 0.5f, 0);
-            }
+                }
             }
        
         

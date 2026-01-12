@@ -60,5 +60,8 @@ TagManager:
   - name: Olive
     uniqueID: 2641952371
     locked: 0
+  - name: UI
+    uniqueID: 521799299
+    locked: 0
   m_RenderingLayers:
   - Default
