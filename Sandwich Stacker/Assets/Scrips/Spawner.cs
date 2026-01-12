@@ -5,6 +5,7 @@ public class Spawner : MonoBehaviour
 {
     public InList ingredientsToChoose;
     public Transform parentSandwich;
+    public GameObject sampleSandwich;
     private Vector3 pos = new Vector3(-12,3,0);
     //private float countUp = 0;
     //private bool isStopped = false;
@@ -25,7 +26,7 @@ public class Spawner : MonoBehaviour
     public void SpawnIngredient(int theChosenIgredient)
     {
         Debug.Log(randomObject);
-        if (randomObject == null || randomObject.GetComponent<ingredienceBehavior>().collisionBool == true)
+        if (sampleSandwich.GetComponent<HoudiniScripini>().viewable== false && (randomObject == null || randomObject.GetComponent<ingredienceBehavior>().collisionBool == true))
         {
             randomObject = Instantiate(ingredientsToChoose.gameObjects[theChosenIgredient], pos, Quaternion.identity,parentSandwich); 
             randomObject.GetComponent<SpriteRenderer>().sortingOrder = orderToIngredient;

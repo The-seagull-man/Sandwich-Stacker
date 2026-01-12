@@ -3042,6 +3042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
   ingredientsToChoose: {fileID: 11400000, guid: 7c405dde2ecf13d45b97bccaeecef382, type: 2}
   parentSandwich: {fileID: 446944781}
+  sampleSandwich: {fileID: 1864892845}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
