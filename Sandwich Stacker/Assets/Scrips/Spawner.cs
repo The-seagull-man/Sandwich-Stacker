@@ -24,7 +24,8 @@ public class Spawner : MonoBehaviour
 
     public void SpawnIngredient(int theChosenIgredient)
     {
-        if (randomObject.GetComponent<ingredienceBehavior>().collisionBool == true || randomObject == null)
+        Debug.Log(randomObject);
+        if (randomObject == null || randomObject.GetComponent<ingredienceBehavior>().collisionBool == true)
         {
             randomObject = Instantiate(ingredientsToChoose.gameObjects[theChosenIgredient], pos, Quaternion.identity,parentSandwich); 
             randomObject.GetComponent<SpriteRenderer>().sortingOrder = orderToIngredient;
@@ -32,7 +33,6 @@ public class Spawner : MonoBehaviour
             top.GetComponent<SpriteRenderer>().sortingOrder = orderToIngredient; 
             orderToIngredient++;
         }
-        
     }
 
     public void StopSpawning()
