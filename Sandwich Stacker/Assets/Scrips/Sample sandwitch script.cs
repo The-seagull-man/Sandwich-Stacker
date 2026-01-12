@@ -24,7 +24,7 @@ public class Samplesandwitchscript : MonoBehaviour
             {
 
                 comp[i].GetComponent<SpriteRenderer>().sprite = RandomListOfIngredients.gameObjects[i].GetComponent<SpriteRenderer>().sprite;   
-                Debug.Log(i);
+                //Debug.Log(i);
                 
             }
             else
