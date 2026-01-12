@@ -13,9 +13,9 @@ public class Compareingscript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        for (int i = 0; i < WantedIngredientsList.Count; i++) 
+        for (int i = 0; i < WantedIngredients.gameObjects.Count; i++) 
         {
-
+            WantedIngredientsList[i] = WantedIngredients.gameObjects[i];
         }
     }
 
