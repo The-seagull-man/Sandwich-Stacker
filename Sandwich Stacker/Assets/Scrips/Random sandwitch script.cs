@@ -35,7 +35,7 @@ public class Randomsandwitchscript : MonoBehaviour
         for (int i = 0; i < Random.Range(1,4) ;i++ ) 
         {
             
-            RandomListOfIngredients.gameObjects.Add(list[Random.Range(0, list.Count)]);
+            RandomListOfIngredients.gameObjects.Add(list[Random.Range(0, list.Count-1)]);
 
         }
         RandomListOfIngredients.gameObjects.Add(bread);
