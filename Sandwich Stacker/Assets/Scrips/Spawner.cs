@@ -12,15 +12,41 @@ public class Spawner : MonoBehaviour
     private int orderToIngredient = 0;
     private GameObject randomObject;
     private Transform top;
-
     void Start()
     {
         //SpawnIngredient();
         
     }
-    void FixedUpdate()
+    void Update()
     {
-       
+        if (Input.GetKey(KeyCode.Alpha1))
+        {
+            SpawnIngredient(0);
+        }
+        if (Input.GetKey(KeyCode.Alpha2))
+        {
+            SpawnIngredient(1);
+        }
+        if (Input.GetKey(KeyCode.Alpha3))
+        {
+            SpawnIngredient(3);
+        }
+        if (Input.GetKey(KeyCode.Alpha4))
+        {
+            SpawnIngredient(6);
+        }
+        if (Input.GetKey(KeyCode.Alpha5))
+        {
+            SpawnIngredient(2);
+        }
+        if (Input.GetKey(KeyCode.Alpha6))
+        {
+            SpawnIngredient(4);
+        }
+        if (Input.GetKey(KeyCode.Alpha7))
+        {
+            SpawnIngredient(5);
+        }
     }
 
     public void SpawnIngredient(int theChosenIgredient)
