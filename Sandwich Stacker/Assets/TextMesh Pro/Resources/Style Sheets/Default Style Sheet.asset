@@ -15,10 +15,16 @@ MonoBehaviour:
   m_StyleList:
   - m_Name: Normal
     m_HashCode: -1183493901
-    m_OpeningDefinition: 
-    m_ClosingDefinition: 
-    m_OpeningTagArray: 
-    m_ClosingTagArray: 
+    m_OpeningDefinition: <#2B2526>*
+    m_ClosingDefinition: </color>*
+    m_OpeningTagArray: 3c000000230000003200000042000000320000003500000032000000360000003e0000002a000000
+    m_ClosingTagArray: 3c0000002f000000630000006f0000006c0000006f000000720000003e0000002a000000
+  - m_Name: Cool
+    m_HashCode: 2484943
+    m_OpeningDefinition: <#2B2526>
+    m_ClosingDefinition: </color>
+    m_OpeningTagArray: 3c000000230000003200000042000000320000003500000032000000360000003e000000
+    m_ClosingTagArray: 3c0000002f000000630000006f0000006c0000006f000000720000003e000000
   - m_Name: H1
     m_HashCode: 2425
     m_OpeningDefinition: <size=2em><b><#40ff80>*
