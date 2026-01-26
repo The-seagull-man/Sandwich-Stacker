@@ -15,7 +15,7 @@ public class ImDoneSandwiching : MonoBehaviour
     bool sandwichIsDone = false;
     private ingredienceBehavior[] childrenTransforms;
     private GameObject topIngredient;
-
+    public GameObject Comparer;
 
     void Start()
     {
@@ -50,7 +50,7 @@ public class ImDoneSandwiching : MonoBehaviour
                     spawnedOlive.transform.position += new Vector3(0, 0.5f, 0);
                 }
             }
-       
+        Comparer.GetComponent<Compareingscript>().checkit();
         
         
     }

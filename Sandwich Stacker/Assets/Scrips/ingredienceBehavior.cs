@@ -13,7 +13,7 @@ public class ingredienceBehavior : MonoBehaviour
     bool touchedIngredient = false;
     bool touchedStacker = false;
     bool addedIngredient = false;
-
+    
 
     void Start()
     {
@@ -45,7 +45,7 @@ public class ingredienceBehavior : MonoBehaviour
             ingredienceList.gameObjects.Add(gameObject);
             addedIngredient = true;
             rb.constraints = RigidbodyConstraints2D.FreezePosition | RigidbodyConstraints2D.FreezeRotation;
-
+            
         }
 
         if (touchedTerminator == true && (touchedIngredient && touchedStacker) == false)
@@ -73,6 +73,7 @@ public class ingredienceBehavior : MonoBehaviour
         if (collision.gameObject.layer == 6)
         {
             touchedStacker = true;
+            
         }
     }
 }

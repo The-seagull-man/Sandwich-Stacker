@@ -7,9 +7,11 @@ public class Compareingscript : MonoBehaviour
 {
     public InList WantedIngredients;
     public InList UsedIngredients;
-
+    
     public List<GameObject> WantedIngredientsList;
     public List<GameObject> UsedIngredientsList;
+
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,13 +25,9 @@ public class Compareingscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       int i = 0;
-        if (UsedIngredients.gameObjects[i] == WantedIngredientsList[i])
-        {
-            Debug.Log("SigmaBalls");
-            i++;
-        }
-        
+      
+
+
 
 
 
@@ -39,7 +37,21 @@ public class Compareingscript : MonoBehaviour
 
     public void checkit()
     {
-
+        
+        for(int i = 0; i < UsedIngredients.gameObjects.Count ; i++)
+        {
+            
+            if (UsedIngredients.gameObjects[i].tag == WantedIngredients.gameObjects[i].tag)
+            {
+                Debug.Log("SigmaBalls");
+                
+            }
+            else
+            {
+                Debug.Log("Wrong");
+            }
+        }
+        
     }
 
 }
