@@ -11,8 +11,8 @@ public class Compareingscript : MonoBehaviour
     public List<GameObject> WantedIngredientsList;
     public List<GameObject> UsedIngredientsList;
 
-    
-
+    public int likeness;
+    public int unlikeness;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -44,13 +44,18 @@ public class Compareingscript : MonoBehaviour
             if (UsedIngredients.gameObjects[i].tag == WantedIngredients.gameObjects[i].tag)
             {
                 Debug.Log("SigmaBalls");
+                likeness ++;
                 
             }
             else
             {
                 Debug.Log("Wrong");
+                unlikeness ++;
             }
         }
+        likeness = likeness * 100;
+        likeness = likeness -likeness +100 -unlikeness*20;
+        Debug.Log(likeness);
         
     }
 
