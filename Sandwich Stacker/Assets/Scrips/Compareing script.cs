@@ -12,11 +12,12 @@ public class Compareingscript : MonoBehaviour
     public List<GameObject> UsedIngredientsList;
 
     public int likeness;
-    public int unlikeness;
+    public int sandwichcorrectness;
 
+    float goal;
     float a;
     float b;
-    float c;
+    float x;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -54,16 +55,19 @@ public class Compareingscript : MonoBehaviour
             else
             {
                 Debug.Log("Wrong");
-                unlikeness ++;
+                
             }
         }
         a = WantedIngredientsList.Count;
-        likeness = 100;
-        b = UsedIngredientsList.Count;
-        c = (likeness - b) / a;
+        goal = 100;
+        b = UsedIngredients.gameObjects.Count;
+        x = (goal) / b;
         
-        Debug.Log(c*WantedIngredientsList.Count);
-        
+        Debug.Log($"x {x}");
+        Debug.Log($"percent correctness i think {x *likeness}");
+        Debug.Log($"amount of wanted ingredients {a}");
+        Debug.Log($"amount of used ingredients {b}");
+        Debug.Log($"amount of correct ingredients used {likeness}");
     }
 
 }
