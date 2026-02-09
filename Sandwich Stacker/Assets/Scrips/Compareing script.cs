@@ -13,6 +13,10 @@ public class Compareingscript : MonoBehaviour
 
     public int likeness;
     public int unlikeness;
+
+    float a;
+    float b;
+    float c;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -53,9 +57,12 @@ public class Compareingscript : MonoBehaviour
                 unlikeness ++;
             }
         }
-        likeness = likeness * 100;
-        likeness = likeness -likeness +100 -unlikeness*20;
-        Debug.Log(likeness);
+        a = WantedIngredientsList.Count;
+        likeness = 100;
+        b = UsedIngredientsList.Count;
+        c = (likeness - b) / a;
+        
+        Debug.Log(c*WantedIngredientsList.Count);
         
     }
 
