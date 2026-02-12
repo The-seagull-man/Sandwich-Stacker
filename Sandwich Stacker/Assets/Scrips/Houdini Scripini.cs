@@ -3,12 +3,16 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UIElements;
+using TMPro;
 
 public class HoudiniScripini : MonoBehaviour
 {
     public GameObject GameObject;
 
     public bool viewable = true;
+    public TMP_Text textMeshPro;
+    public GameObject MakeDarker;
+    public GameObject UI;
 
     Transform position;
 
@@ -31,6 +35,7 @@ public class HoudiniScripini : MonoBehaviour
             {
                 timerEnded();
             }
+            textMeshPro.text = $"Remember This Sandwich\n{Mathf.RoundToInt(targetTime)}";
         }
         if (!viewable)
         {
@@ -42,7 +47,8 @@ public class HoudiniScripini : MonoBehaviour
     {
         viewable = false;
             step = speed * Time.deltaTime;
-
+        MakeDarker.SetActive(false);
+        UI.SetActive(true);
             
         
         
