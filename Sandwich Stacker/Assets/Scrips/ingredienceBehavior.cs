@@ -6,6 +6,7 @@ public class ingredienceBehavior : MonoBehaviour
     [SerializeField] private float speed = 0.07f;
     bool fly = true;
     public InList ingredienceList;
+    public InList sandwichIngredients;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRender;
     public bool collisionBool = false;
@@ -42,7 +43,7 @@ public class ingredienceBehavior : MonoBehaviour
         if ((touchedIngredient && touchedStacker) == true && addedIngredient == false)
         {
             collisionBool = true;
-            ingredienceList.gameObjects.Add(gameObject);
+            AddIngredient(gameObject);
             addedIngredient = true;
             rb.constraints = RigidbodyConstraints2D.FreezePosition | RigidbodyConstraints2D.FreezeRotation;
             
@@ -52,6 +53,18 @@ public class ingredienceBehavior : MonoBehaviour
         {
             Object.Destroy(gameObject);
         }
+    }
+
+    void AddIngredient(GameObject obj)
+    {
+        for (int j = 0; j < sandwichIngredients.gameObjects.Count; j++)
+        {
+            if (obj.tag == sandwichIngredients.gameObjects[j].GetComponent<SpriteRenderer>().tag)
+            {
+               ingredienceList.gameObjects.Add(sandwichIngredients.gameObjects[j]);
+            }
+        }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
