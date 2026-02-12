@@ -1722,7 +1722,6 @@ GameObject:
   - component: {fileID: 1544034527}
   - component: {fileID: 1544034526}
   - component: {fileID: 1544034525}
-  - component: {fileID: 1544034524}
   m_Layer: 5
   m_Name: Button Leave
   m_TagString: Untagged
@@ -1750,18 +1749,6 @@ RectTransform:
   m_AnchoredPosition: {x: 771, y: -431}
   m_SizeDelta: {x: 91.31, y: 39.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1544034524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1544034522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cd0c320bb6a298478781f6eb90f8841, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LeaveGame
 --- !u!114 &1544034525
 MonoBehaviour:
   m_ObjectHideFlags: 0
