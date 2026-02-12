@@ -1,6 +1,6 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
+//using static UnityEditor.PlayerSettings;
 
 public class ImDoneSandwiching : MonoBehaviour
 {

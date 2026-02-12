@@ -47,7 +47,6 @@ public class ingredienceBehavior : MonoBehaviour
             AddIngredient(gameObject);
             addedIngredient = true;
             rb.constraints = RigidbodyConstraints2D.FreezePosition | RigidbodyConstraints2D.FreezeRotation;
-            
         }
 
         if (touchedTerminator == true && (touchedIngredient && touchedStacker) == false)
