@@ -26,13 +26,22 @@ public class horizontalcomparer : MonoBehaviour
         
         for (int i = 0; i <  sandwichPieces.gameObjects.Count; i++) 
         {
-            
 
-            
+            Debug.Log("Horizontal activation");
 
-            correctnessVal.Add(Listfloat.positions[i] - distance1.position.x);
+            if (Mathf.Abs(Listfloat.positions[i] - distance1.position.x) <= 0.11f)
+            {
+                Debug.Log("hor pos");
+                correctnessVal.Add(0);
+            }
+            else
+            {
+                correctnessVal.Add(Listfloat.positions[i] - distance1.position.x);
+            }
+                
           
         }
+        
     }
 
     // Update is called once per frame
