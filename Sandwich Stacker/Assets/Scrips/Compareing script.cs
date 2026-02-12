@@ -15,7 +15,7 @@ public class Compareingscript : MonoBehaviour
     public int sandwichcorrectness;
 
     float goal;
-    float a;
+
     float b;
     float x;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -58,14 +58,14 @@ public class Compareingscript : MonoBehaviour
                 
             }
         }
-        a = WantedIngredientsList.Count;
+        
         goal = 100;
         b = UsedIngredients.gameObjects.Count;
         x = (goal) / b;
         
         Debug.Log($"x {x}");
         Debug.Log($"percent correctness i think {x *likeness}");
-        Debug.Log($"amount of wanted ingredients {a}");
+        
         Debug.Log($"amount of used ingredients {b}");
         Debug.Log($"amount of correct ingredients used {likeness}");
     }
