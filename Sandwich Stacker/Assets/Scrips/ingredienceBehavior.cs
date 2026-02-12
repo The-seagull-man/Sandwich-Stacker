@@ -7,6 +7,7 @@ public class ingredienceBehavior : MonoBehaviour
     bool fly = true;
     public InList ingredienceList;
     public InList sandwichIngredients;
+    public InList emptyIngriedientList;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRender;
     public bool collisionBool = false;
@@ -59,9 +60,9 @@ public class ingredienceBehavior : MonoBehaviour
     {
         for (int j = 0; j < sandwichIngredients.gameObjects.Count; j++)
         {
-            if (obj.tag == sandwichIngredients.gameObjects[j].GetComponent<SpriteRenderer>().tag)
+            if (obj.tag == emptyIngriedientList.gameObjects[j].tag)
             {
-               ingredienceList.gameObjects.Add(sandwichIngredients.gameObjects[j]);
+               ingredienceList.gameObjects.Add(emptyIngriedientList.gameObjects[j]);
             }
         }
         Listfloat.positions.Add(obj.transform.position.x);
