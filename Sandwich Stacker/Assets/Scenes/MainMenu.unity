@@ -1806,8 +1806,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1544034524}
-        m_TargetAssemblyTypeName: LeaveGame, Assembly-CSharp
+      - m_Target: {fileID: 265278273}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: LeaveGameFunk
         m_Mode: 1
         m_Arguments:

@@ -7,6 +7,7 @@ public class PauseScreen : MonoBehaviour
     public Canvas pauseScreenCanvas;
     void Start()
     {
+        Time.timeScale = 1.0f;
         pauseScreenCanvas.gameObject.SetActive(false);
     }
 

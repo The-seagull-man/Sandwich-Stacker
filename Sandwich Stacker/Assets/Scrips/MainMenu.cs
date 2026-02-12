@@ -14,4 +14,8 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("GamePlay");
     }
+    public void LeaveGameFunk()
+    {
+        Application.Quit();
+    }
 }
