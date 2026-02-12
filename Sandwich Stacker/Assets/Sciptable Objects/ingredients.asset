@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: ingredients
   m_EditorClassIdentifier: Assembly-CSharp::InList
   gameObjects:
-  - {fileID: 6804456936034454287, guid: 04b89c3ea90b898488888527bda0f06b, type: 3}
-  - {fileID: 6804456936034454287, guid: 6984a6fe0cda91d41a463eb190118f3a, type: 3}
-  - {fileID: 6804456936034454287, guid: fcd2f5ccf65a01e4d98c3d0264544a4f, type: 3}
-  - {fileID: 6804456936034454287, guid: 5cdca94344a7251448355ef54ef432c0, type: 3}
-  - {fileID: 6804456936034454287, guid: 050a9b70a0ca9b3438232b0bf282a325, type: 3}
-  - {fileID: 6804456936034454287, guid: c588d2eb47946ad41b8654594a06de94, type: 3}
-  - {fileID: 6804456936034454287, guid: e90ab7dd675c5b04cb73cf7dd032790e, type: 3}
+  - {fileID: 3021913793777979956, guid: d696b076d7d9f6c42839ac39107e3933, type: 3}
+  - {fileID: 3021913793777979956, guid: 317bc9455c648d042809377f0c7337ab, type: 3}
+  - {fileID: 3021913793777979956, guid: 429ac80548cde4945924f5c75d3410aa, type: 3}
+  - {fileID: 3021913793777979956, guid: 512357b31e5e5834da0384793640512e, type: 3}
+  - {fileID: 3021913793777979956, guid: 3fe9981d9a616db40a98d35517ab7345, type: 3}
+  - {fileID: 3021913793777979956, guid: d2ef1e894ecf6464ea9e1af54c0fd658, type: 3}
+  - {fileID: 3021913793777979956, guid: 58cced83da59c364ea1b15d9e1ebe61f, type: 3}

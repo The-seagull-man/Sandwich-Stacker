@@ -8,14 +8,14 @@ public class horizontalcomparer : MonoBehaviour
     public Transform distance1;
     public Transform distance2;
 
-    
+    float e;
     
 
     Transform actualDistance;
 
     Transform temp;
     public InList sandwichPieces;
-
+    public ListFloat Listfloat;
     
 
     public List<float> correctnessVal = new List<float>();
@@ -26,12 +26,12 @@ public class horizontalcomparer : MonoBehaviour
         
         for (int i = 0; i <  sandwichPieces.gameObjects.Count; i++) 
         {
-            distance2 = sandwichPieces.gameObjects[i].transform;
+            
 
             
 
-            correctnessVal.Add(new Vector2(distance2.position.x - distance1.position.x, 0).x);
-            
+            correctnessVal.Add(Listfloat.positions[i] - distance1.position.x);
+          
         }
     }
 

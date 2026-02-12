@@ -111,6 +111,7 @@ MonoBehaviour:
   ingredienceList: {fileID: 11400000, guid: 71a0826cb865d6848bb478f2660a2b45, type: 2}
   sandwichIngredients: {fileID: 11400000, guid: 7c405dde2ecf13d45b97bccaeecef382, type: 2}
   collisionBool: 0
+  Listfloat: {fileID: 11400000, guid: 323af14278af372408a4730b5d18b91a, type: 2}
 --- !u!114 &2632619724909982784
 MonoBehaviour:
   m_ObjectHideFlags: 0

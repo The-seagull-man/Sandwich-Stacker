@@ -14,7 +14,7 @@ public class ingredienceBehavior : MonoBehaviour
     bool touchedIngredient = false;
     bool touchedStacker = false;
     bool addedIngredient = false;
-    
+    public ListFloat Listfloat;
 
     void Start()
     {
@@ -64,7 +64,7 @@ public class ingredienceBehavior : MonoBehaviour
                ingredienceList.gameObjects.Add(sandwichIngredients.gameObjects[j]);
             }
         }
-
+        Listfloat.positions.Add(obj.transform.position.x);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

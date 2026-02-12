@@ -475,9 +475,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::horizontalcomparer
   distance1: {fileID: 407642976}
   distance2: {fileID: 0}
-  xdistance1: {fileID: 407642976}
-  xdistance2: {fileID: 0}
   sandwichPieces: {fileID: 11400000, guid: 71a0826cb865d6848bb478f2660a2b45, type: 2}
+  Listfloat: {fileID: 11400000, guid: 323af14278af372408a4730b5d18b91a, type: 2}
   correctnessVal: []
 --- !u!4 &237936248
 Transform:
