@@ -280,11 +280,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f24462b8fa49390499dd0664455bc7a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::horizontalcomparer
-  distance1: {fileID: 0}
+  distance1: {fileID: 407642976}
   distance2: {fileID: 0}
-  xdistance1: {fileID: 0}
+  xdistance1: {fileID: 407642976}
   xdistance2: {fileID: 0}
-  sandwichPieces: {fileID: 0}
+  sandwichPieces: {fileID: 11400000, guid: 71a0826cb865d6848bb478f2660a2b45, type: 2}
   correctnessVal: []
 --- !u!4 &237936248
 Transform:
@@ -411,6 +411,7 @@ MonoBehaviour:
   plate: {fileID: 1241590263}
   speed: 5
   Comparer: {fileID: 1817881627}
+  HorizontalComparer: {fileID: 237936246}
 --- !u!61 &260630685
 BoxCollider2D:
   m_ObjectHideFlags: 0

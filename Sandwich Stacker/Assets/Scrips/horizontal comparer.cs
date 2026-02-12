@@ -8,8 +8,8 @@ public class horizontalcomparer : MonoBehaviour
     public Transform distance1;
     public Transform distance2;
 
-    public Transform xdistance1;
-    public Transform xdistance2;
+    
+    
 
     Transform actualDistance;
 
@@ -20,7 +20,7 @@ public class horizontalcomparer : MonoBehaviour
 
     public List<float> correctnessVal = new List<float>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void HorizontalChecker()
     {
         
         
@@ -30,7 +30,7 @@ public class horizontalcomparer : MonoBehaviour
 
             
 
-            correctnessVal.Add(new Vector2(xdistance2.position.x - xdistance1.position.x, 0).x);
+            correctnessVal.Add(new Vector2(distance2.position.x - distance1.position.x, 0).x);
             
         }
     }

@@ -16,7 +16,7 @@ public class ImDoneSandwiching : MonoBehaviour
     private ingredienceBehavior[] childrenTransforms;
     private GameObject topIngredient;
     public GameObject Comparer;
-
+    public GameObject HorizontalComparer;
     void Start()
     {
         topIngredient = null;
@@ -51,7 +51,7 @@ public class ImDoneSandwiching : MonoBehaviour
                 }
             }
         Comparer.GetComponent<Compareingscript>().checkit();
-        
+        HorizontalComparer.GetComponent<horizontalcomparer>().HorizontalChecker();
         
     }
 
