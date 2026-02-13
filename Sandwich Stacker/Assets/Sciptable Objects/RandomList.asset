@@ -12,21 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bcdeb7543dd45040bba8b94c4ce6122, type: 3}
   m_Name: RandomList
   m_EditorClassIdentifier: Assembly-CSharp::InList
-  gameObjects:
-  - {fileID: 6804456936034454287, guid: 04b89c3ea90b898488888527bda0f06b, type: 3}
-  - {fileID: 6804456936034454287, guid: fcd2f5ccf65a01e4d98c3d0264544a4f, type: 3}
-  - {fileID: 6804456936034454287, guid: e90ab7dd675c5b04cb73cf7dd032790e, type: 3}
-  - {fileID: 6804456936034454287, guid: 6984a6fe0cda91d41a463eb190118f3a, type: 3}
-  - {fileID: 6804456936034454287, guid: 04b89c3ea90b898488888527bda0f06b, type: 3}
-  - {fileID: 6804456936034454287, guid: 5d13078000a7b7242bf6954aa8c2b541, type: 3}
-  - {fileID: 6804456936034454287, guid: 04b89c3ea90b898488888527bda0f06b, type: 3}
-  - {fileID: 6804456936034454287, guid: fcd2f5ccf65a01e4d98c3d0264544a4f, type: 3}
-  - {fileID: 6804456936034454287, guid: fcd2f5ccf65a01e4d98c3d0264544a4f, type: 3}
-  - {fileID: 6804456936034454287, guid: 04b89c3ea90b898488888527bda0f06b, type: 3}
-  - {fileID: 6804456936034454287, guid: 5d13078000a7b7242bf6954aa8c2b541, type: 3}
-  - {fileID: 6804456936034454287, guid: 04b89c3ea90b898488888527bda0f06b, type: 3}
-  - {fileID: 6804456936034454287, guid: 6984a6fe0cda91d41a463eb190118f3a, type: 3}
-  - {fileID: 6804456936034454287, guid: 050a9b70a0ca9b3438232b0bf282a325, type: 3}
-  - {fileID: 6804456936034454287, guid: fcd2f5ccf65a01e4d98c3d0264544a4f, type: 3}
-  - {fileID: 6804456936034454287, guid: 04b89c3ea90b898488888527bda0f06b, type: 3}
-  - {fileID: 6804456936034454287, guid: 5d13078000a7b7242bf6954aa8c2b541, type: 3}
+  gameObjects: []
