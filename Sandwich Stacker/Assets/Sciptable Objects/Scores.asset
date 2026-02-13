@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99e66005a1f32934981db532c4049c04, type: 3}
-  m_Name: Score
+  m_Name: Scores
   m_EditorClassIdentifier: Assembly-CSharp::floatvalues
   IngredientCorrectness: 0
   HowTheFuckGoodStackedItIs: 0

@@ -11,6 +11,8 @@ public class Compareingscript : MonoBehaviour
     public List<GameObject> WantedIngredientsList;
     public List<GameObject> UsedIngredientsList;
 
+    public floatvalues ingredientCorrectness;
+
     public int likeness;
     public int sandwichcorrectness;
 
@@ -63,11 +65,15 @@ public class Compareingscript : MonoBehaviour
         b = UsedIngredients.gameObjects.Count;
         x = (goal) / b;
         
+        
+
         Debug.Log($"x {x}");
         Debug.Log($"percent correctness i think {x *likeness}");
         
         Debug.Log($"amount of used ingredients {b}");
         Debug.Log($"amount of correct ingredients used {likeness}");
+
+        ingredientCorrectness.IngredientCorrectness = x * likeness;
     }
 
 }
