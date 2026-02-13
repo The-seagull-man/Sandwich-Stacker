@@ -45,7 +45,7 @@ public class horizontalcomparer : MonoBehaviour
           
         }
         CollectiveCorrectness *= 100/ sandwichPieces.gameObjects.Count;
-        HorizontalScore.HowTheFuckGoodStackedItIs = 100 - CollectiveCorrectness; 
+        Mathf.RoundToInt(HorizontalScore.HowTheFuckGoodStackedItIs = 100 - CollectiveCorrectness); 
         if(HorizontalScore.HowTheFuckGoodStackedItIs < 0)
         {
             HorizontalScore.HowTheFuckGoodStackedItIs = 0;

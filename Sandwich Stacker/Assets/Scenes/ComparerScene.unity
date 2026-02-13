@@ -264,7 +264,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RemakingPlayerSandwich
   PlayerSandwich: {fileID: 11400000, guid: 71a0826cb865d6848bb478f2660a2b45, type: 2}
-  comp: []
+  comp:
+  - {fileID: 2065996675}
+  - {fileID: 965701014}
+  - {fileID: 432265583}
+  - {fileID: 290202369}
+  - {fileID: 556558527}
+  - {fileID: 1250067628}
+  - {fileID: 1600048564}
+  olive: {fileID: 0}
 --- !u!1 &214318678
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,9 +544,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingLayerID: -1928439973
+  m_SortingLayer: -1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1ccbd9b25c2b73645b359656a58ce854, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1095,9 +1103,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1928439973
+  m_SortingLayer: -1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.2784314, g: 0.24313727, b: 0.24705884, a: 1}
   m_FlipX: 0

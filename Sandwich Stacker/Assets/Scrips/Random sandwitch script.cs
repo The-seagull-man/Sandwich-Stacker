@@ -2,10 +2,11 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Randomsandwitchscript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     public InList RandomListOfIngredients;
     public GameObject bread;
     public GameObject beef;
@@ -23,23 +24,27 @@ public class Randomsandwitchscript : MonoBehaviour
     void Start()
     {
         
-        list.Add(beef);
-        list.Add(tomato);
-        list.Add(cucumber);
-        list.Add(onion);
-        list.Add(cheese);
-        list.Add(salad);
-        list.Add (olive);
         
-        RandomListOfIngredients.gameObjects.Add(bread);
-        for (int i = 0; i < Random.Range(1,4) ;i++ ) 
+            list.Add(beef);
+            list.Add(tomato);
+            list.Add(cucumber);
+            list.Add(onion);
+            list.Add(cheese);
+            list.Add(salad);
+            list.Add(olive);
+        if (SceneManager.GetActiveScene().name == ("GamePlay")) 
         {
-            
-            RandomListOfIngredients.gameObjects.Add(list[Random.Range(0, list.Count-1)]);
+            RandomListOfIngredients.gameObjects.Add(bread);
+            for (int i = 0; i < Random.Range(1, 4); i++)
+            {
+
+                RandomListOfIngredients.gameObjects.Add(list[Random.Range(0, list.Count - 1)]);
+
+            }
+            RandomListOfIngredients.gameObjects.Add(bread);
+            RandomListOfIngredients.gameObjects.Add(olive);
 
         }
-        RandomListOfIngredients.gameObjects.Add(bread);
-        RandomListOfIngredients.gameObjects.Add(olive);
 
 
     }
@@ -47,25 +52,28 @@ public class Randomsandwitchscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if (Input.GetKeyDown(KeyCode.C)) 
+        if (SceneManager.GetActiveScene().name == ("GamePlay"))
         {
-            RandomListOfIngredients.gameObjects.Clear();
-        
-        }
-        if (Input.GetKeyDown(KeyCode.E)) 
-        {
-            
-            RandomListOfIngredients.gameObjects.Add(bread);
-            for (int i = 0; i < Random.Range(1, 6); i++)
+            if (Input.GetKeyDown(KeyCode.C))
             {
-
-                RandomListOfIngredients.gameObjects.Add(list[Random.Range(0, list.Count)]);
+                RandomListOfIngredients.gameObjects.Clear();
 
             }
-            RandomListOfIngredients.gameObjects.Add(bread);
-            RandomListOfIngredients.gameObjects.Add(olive);
+            if (Input.GetKeyDown(KeyCode.E))
+            {
 
+                RandomListOfIngredients.gameObjects.Add(bread);
+                for (int i = 0; i < Random.Range(1, 6); i++)
+                {
+
+                    RandomListOfIngredients.gameObjects.Add(list[Random.Range(0, list.Count)]);
+
+                }
+                RandomListOfIngredients.gameObjects.Add(bread);
+                RandomListOfIngredients.gameObjects.Add(olive);
+
+            }
         }
+        
     }
 }

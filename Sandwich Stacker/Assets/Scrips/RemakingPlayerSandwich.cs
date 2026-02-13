@@ -5,6 +5,7 @@ public class RemakingPlayerSandwich : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public InList PlayerSandwich;
     public Component[] comp;
+    public Component olive;
     void Start()
     {
         comp = GetComponentsInChildren<SpriteRenderer>();
@@ -17,9 +18,12 @@ public class RemakingPlayerSandwich : MonoBehaviour
             }
             else
             {
+               
                 comp[i].GetComponent<SpriteRenderer>().sprite = null;
             }
         }
+        
+        
     }
 
     // Update is called once per frame

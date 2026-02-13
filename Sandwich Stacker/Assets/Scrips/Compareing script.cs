@@ -73,7 +73,7 @@ public class Compareingscript : MonoBehaviour
         Debug.Log($"amount of used ingredients {b}");
         Debug.Log($"amount of correct ingredients used {likeness}");
 
-        ingredientCorrectness.IngredientCorrectness = x * likeness;
+        Mathf.RoundToInt(ingredientCorrectness.IngredientCorrectness = x * likeness) ;
     }
 
 }
