@@ -12,12 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d820fb9b54191ab4eb1b70ccc963e328, type: 3}
   m_Name: IngredientPosistions
   m_EditorClassIdentifier: Assembly-CSharp::ListFloat
-  positions:
-  - -0.5002272
-  - 1.4052036
-  - 1.7003734
-  - 0.1001521
-  - 0.3001747
-  - -0.40020335
-  - -0.6002435
-  - -0.00008826703
+  positions: []

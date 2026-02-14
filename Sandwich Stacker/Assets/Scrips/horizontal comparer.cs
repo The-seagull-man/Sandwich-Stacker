@@ -31,20 +31,21 @@ public class horizontalcomparer : MonoBehaviour
 
             Debug.Log("Horizontal activation");
 
-            if ((Listfloat.positions[i] - distance1.position.x) <= 0.11f)
+            if ((Mathf.Abs(Listfloat.positions[i] - distance1.position.x)) <= 0.11f)
             {
                 Debug.Log("hor pos");
                 correctnessVal.Add(0);
             }
             else
             {
-                correctnessVal.Add ((Mathf.Abs(Listfloat.positions[i] - distance1.position.x)));
-                CollectiveCorrectness += Listfloat.positions[i] - distance1.position.x;
+               // correctnessVal.Add ((Mathf.Abs(Listfloat.positions[i] - distance1.position.x)));
+                CollectiveCorrectness += Mathf.Abs(Listfloat.positions[i] - distance1.position.x);
             }
               
           
         }
-        CollectiveCorrectness *= 100/ sandwichPieces.gameObjects.Count;
+
+        CollectiveCorrectness *= 100 / sandwichPieces.gameObjects.Count;
         Mathf.RoundToInt(HorizontalScore.HowTheFuckGoodStackedItIs = 100 - CollectiveCorrectness); 
         if(HorizontalScore.HowTheFuckGoodStackedItIs < 0)
         {
