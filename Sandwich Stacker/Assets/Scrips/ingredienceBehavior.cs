@@ -64,7 +64,7 @@ public class ingredienceBehavior : MonoBehaviour
                ingredienceList.gameObjects.Add(emptyIngriedientList.gameObjects[j]);
             }
         }
-        Listfloat.positions.Add(Mathf.Abs(obj.transform.position.x));
+        Listfloat.positions.Add(obj.transform.position.x);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

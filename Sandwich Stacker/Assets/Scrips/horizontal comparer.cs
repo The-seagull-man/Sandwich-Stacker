@@ -38,7 +38,7 @@ public class horizontalcomparer : MonoBehaviour
             }
             else
             {
-                correctnessVal.Add ((Listfloat.positions[i] - distance1.position.x));
+                correctnessVal.Add ((Mathf.Abs(Listfloat.positions[i] - distance1.position.x)));
                 CollectiveCorrectness += Listfloat.positions[i] - distance1.position.x;
             }
               

@@ -11,8 +11,8 @@ public class Textscript : MonoBehaviour
 
     void Start()
     {
-        shape.text = ($"Centered score {Scores.HowTheFuckGoodStackedItIs.ToString()}");
-        correctness.text = ($"Ingredient score {Scores.IngredientCorrectness.ToString()}");
+        shape.text = ($"Centered score {Mathf.RoundToInt(Scores.HowTheFuckGoodStackedItIs).ToString()}");
+        correctness.text = ($"Ingredient score {Mathf.RoundToInt(Scores.IngredientCorrectness).ToString()}");
 
     }
 

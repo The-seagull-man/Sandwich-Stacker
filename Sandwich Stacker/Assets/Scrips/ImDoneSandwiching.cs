@@ -9,6 +9,7 @@ public class ImDoneSandwiching : MonoBehaviour
     public GameObject sandwichParent;
     public GameObject olive;
     public GameObject plate;
+    public GameObject deliverButton;
     [SerializeField] private float speed = 1.0f;
     private float step;
     private GameObject spawnedOlive;
@@ -20,6 +21,7 @@ public class ImDoneSandwiching : MonoBehaviour
     void Start()
     {
         topIngredient = null;
+        deliverButton.SetActive(false);
     }
 
     // Update is called once per frame
@@ -52,7 +54,7 @@ public class ImDoneSandwiching : MonoBehaviour
             }
         Comparer.GetComponent<Compareingscript>().checkit();
         HorizontalComparer.GetComponent<horizontalcomparer>().HorizontalChecker();
-        
+        deliverButton.SetActive(true);
     }
 
     
