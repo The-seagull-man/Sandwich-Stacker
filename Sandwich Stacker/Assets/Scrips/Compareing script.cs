@@ -7,6 +7,7 @@ public class Compareingscript : MonoBehaviour
 {
     public InList WantedIngredients;
     public InList UsedIngredients;
+
     
     public List<GameObject> WantedIngredientsList;
     public List<GameObject> UsedIngredientsList;
@@ -16,13 +17,14 @@ public class Compareingscript : MonoBehaviour
     public int likeness;
     public int sandwichcorrectness;
 
+    int shortestLengthOfList;
     float goal;
 
     float b;
     float x;
     void Start()
     {
-        for (int i = 0; i < WantedIngredients.gameObjects.Count; i++) 
+        for (int i = 0; i < UsedIngredients.gameObjects.Count; i++) 
         {
             WantedIngredientsList.Add(WantedIngredients.gameObjects[i]);
         }
@@ -30,7 +32,16 @@ public class Compareingscript : MonoBehaviour
     public void checkit()
     {
         
-        for(int i = 0; i < UsedIngredients.gameObjects.Count ; i++)
+        if (UsedIngredients.gameObjects.Count < WantedIngredients.gameObjects.Count)
+        {
+            shortestLengthOfList = UsedIngredients.gameObjects.Count;
+        }
+        else
+        {
+            shortestLengthOfList = WantedIngredients.gameObjects.Count;
+        }
+
+        for(int i = 0; i < shortestLengthOfList ; i++)
         {
             
             if (UsedIngredients.gameObjects[i].tag == WantedIngredients.gameObjects[i].tag)
