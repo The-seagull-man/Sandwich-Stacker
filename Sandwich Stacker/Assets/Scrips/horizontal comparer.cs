@@ -52,10 +52,4 @@ public class horizontalcomparer : MonoBehaviour
             HorizontalScore.HowTheFuckGoodStackedItIs = 0;
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

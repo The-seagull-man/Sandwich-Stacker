@@ -30,7 +30,7 @@ public class Compareingscript : MonoBehaviour
     public void checkit()
     {
         
-        for(int i = 0; i < WantedIngredients.gameObjects.Count ; i++)
+        for(int i = 0; i < UsedIngredients.gameObjects.Count ; i++)
         {
             
             if (UsedIngredients.gameObjects[i].tag == WantedIngredients.gameObjects[i].tag)
