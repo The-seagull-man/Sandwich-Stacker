@@ -26,5 +26,11 @@ public class Makeanothersandwich : MonoBehaviour
     {
         SceneManager.LoadScene("ComparerScene");
     }
-    
+    public void Menuscene()
+    {
+        positions.positions.Clear();
+
+        Playerlist.gameObjects.Clear();
+        Randomingredients.gameObjects.Clear();
+    }
 }
